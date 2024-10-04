@@ -3,7 +3,7 @@ import Crew from "./components/Crew";
 import Footer from "./components/Footer";
 import HeroSection from "./components/Herosection";
 import Navbar from "./components/Navbar";
-import ThreeDdesign from "./components/ThreeDesign";
+import ThreeDdesign from "./components/ThreeD";
 import WebDev from "./components/WebDev";
 
 export default function Home() {
