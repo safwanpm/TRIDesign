@@ -1,6 +1,6 @@
 'use client';
 
-export default function ThreeD() {
+export default function ThreeDdesign() {
   return (
     <section className="flex flex-col md:flex-row items-center justify-between w-full md:h-[600px] bg-secondary-gradient p-8 rounded-3xl">
       {/* Left Side: Image */}
@@ -23,12 +23,12 @@ export default function ThreeD() {
           3ds Max, and SketchUp, we create immersive visuals that allow you to see your projects in stunning detail. 
           Whether it's drafting or photorealistic rendering, we ensure the highest quality in every aspect of 3D modeling.
         </p>
-        <button className="bg-white text-purple-700 px-6 py-3 rounded-full flex items-center gap-2">
+        <a href="/threed" className="bg-white text-purple-700 px-6 py-3 rounded-full flex items-center gap-2">
           <span>View Our Recent Projects</span>
           <svg className="w-6 h-6 text-pink-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
           </svg>
-        </button>
+        </a>
       </div>
       {/* Right Side: Text and Tags */}
       <div className="md:w-2/4 flex justify-center items-center">

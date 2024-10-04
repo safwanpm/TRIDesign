@@ -3,7 +3,7 @@ import Crew from "./components/Crew";
 import Footer from "./components/Footer";
 import HeroSection from "./components/Herosection";
 import Navbar from "./components/Navbar";
-import ThreeD from "./components/ThreeD";
+import ThreeDdesign from "./components/ThreeDesign";
 import WebDev from "./components/WebDev";
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
         {/* Other content */}
       </div>
       <div className="p-4 md:p-16"> {/* Add margin-top to avoid content hiding behind the navbar */}
-        <ThreeD />
+        <ThreeDdesign/>
         {/* Other content */}
       </div>
       <Crew/>

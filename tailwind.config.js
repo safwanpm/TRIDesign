@@ -13,8 +13,9 @@ module.exports = {
         
       },
       backgroundImage: {
-        'primary-gradient': 'linear-gradient(to right, #9F7AEA, #ED64A6, #F6AD55)', // your gradient colors
+        'primary-gradient': 'linear-gradient(to right, #9F7AEA, #31346E, #31346E)', // your gradient colors
         'secondary-gradient': 'linear-gradient(to right, #9F7AEA, #ED64A6, #F6AD55)', // your gradient colors
+        'zahrat-gradient': 'linear-gradient(to right, #3b5d50,#3b5d50, #31346E)', // your gradient colors
       },
     },
   },

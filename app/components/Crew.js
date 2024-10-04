@@ -14,7 +14,7 @@ export default function Crew() {
     <div className="py-16 bg-">
       <div className="container mx-auto text-center">
         {/* Meet the Crew Header */}
-        <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">
+        <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-primary-gradient">
           Meet the Crew
         </h2>
         

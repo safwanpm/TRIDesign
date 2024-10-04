@@ -28,7 +28,7 @@ export default function HeroSection() {
                 </p>
 
                 <button className="mt-8 px-6 py-3 rounded-full bg-primary-gradient text-white text-lg hover:scale-105 transform transition duration-300">
-                    Let's Get Started!
+                    Scroll Now!
                 </button>
             </div>
         </section>
