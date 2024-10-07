@@ -2,18 +2,26 @@
 
 export default function WebDev() {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between  bg-primary-gradient w-full md:h-[600px]  p-8 rounded-3xl">
+    <section className="  flex flex-col md:flex-row items-center justify-between  bg-[#0d3b66] w-full md:h-[700px]   rounded-3xl">
       {/* Left Side: Image */}
-      <div className="md:w-2/4 flex justify-center items-center">
+      <div className="relative md:w-2/4 flex flex-col justify-center items-center bg-[#faf0ca] md:h-[700px] md:rounded-s-3xl">
+        {/* Top Image */}
         <img
-         src="/images/lap.gif" // Replace with your image path
+          src="/images/Back 2.png" // Replace with your top image path
+          alt="Top Banner"
+          className="hidden md:block absolute  right-0 md:h-[700px]  "
+        />
+        
+        {/* Main Image */}
+        <img
+          src="/images/laptop.png" // Replace with your image path
           alt="Website Showcase"
-          className="w-3/4 md:w-3/4 rounded-lg"
+          className="w-3/4 md:w-3/4 rounded-lg overflow-hidden "
         />
       </div>
 
       {/* Right Side: Text and Tags */}
-      <div className="md:w-2/4 text-white mt-8 md:mt-0">
+      <div className="md:w-2/4 text-white mt-8 md:mt-0 p-8">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">Websites</h2>
         <div className="flex flex-wrap gap-4 mb-6">
           {/* Tags */}

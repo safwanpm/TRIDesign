@@ -2,10 +2,10 @@
 
 export default function ThreeDdesign() {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between w-full md:h-[600px] bg-secondary-gradient p-8 rounded-3xl">
-      {/* Left Side: Image */}
+    <section className="flex flex-col md:flex-row items-center justify-between w-full bg-[#0d3b66] md:h-[700px]  rounded-3xl">
+     {/* Left side Text */}
     
-      <div className="md:w-2/4 text-white mt-12 md:mt-0">
+      <div className="md:w-2/4 text-white mt-12 md:mt-0 p-8 ">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">3D Visualising</h2>
         <div className="flex flex-wrap gap-4 mb-6">
           {/* Tags */}
@@ -30,10 +30,17 @@ export default function ThreeDdesign() {
           </svg>
         </a>
       </div>
-      {/* Right Side: Text and Tags */}
-      <div className="md:w-2/4 flex justify-center items-center">
-        <img
-         src="/images/lap.gif" // Replace with your image path
+      {/* Right Side: Image */}
+     
+      <div className=" relative md:w-2/4 flex justify-center items-center bg-[#faf0ca] md:h-[700px] md:rounded-e-3xl">
+       
+      <img
+          src="/images/Back 1.png" // Replace with your top image path
+          alt="Top Banner"
+          className="hidden md:block absolute  left-0 md:h-[700px]  "
+        />
+         <img
+         src="/images/laptop.png" // Replace with your image path
           alt="Website Showcase"
           className="w-3/4 md:w-3/4 rounded-lg"
         />
