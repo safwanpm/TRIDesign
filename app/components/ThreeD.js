@@ -40,7 +40,7 @@ export default function ThreeDdesign() {
           className="hidden md:block absolute  left-0 md:h-[700px]  "
         />
          <img
-         src="/images/laptop.png" // Replace with your image path
+         src="/images/laptop-min.png" // Replace with your image path
           alt="Website Showcase"
           className="w-3/4 md:w-3/4 rounded-lg"
         />

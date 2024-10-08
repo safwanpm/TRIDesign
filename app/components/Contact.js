@@ -51,11 +51,11 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className="sm:mt-8">
+            {/* <div className="sm:mt-8">
                 <a className="p-4 md:p-10 bg-primary-gradient rounded-full shadow-lg">
                     <span className="text-white text-2xl">↗️</span>
                 </a>
-            </div>
+            </div> */}
         </div>
     );
 };
