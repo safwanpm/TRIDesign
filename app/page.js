@@ -11,7 +11,7 @@ export default function Home() {
 
 
   return (
-    <div className={`${inter.className} overflow-hidden`}>
+    <div className={` overflow-hidden`}>
       <Navbar />
       <div> 
         <HeroSection />

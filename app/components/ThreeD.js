@@ -42,7 +42,7 @@ export default function ThreeDdesign() {
          <img
          src="/images/laptop-min.png" // Replace with your image path
           alt="Website Showcase"
-          className="w-3/4 md:w-3/4 rounded-lg"
+          className="w-3/4 md:w-full pl-32 rounded-lg"
         />
       </div>
     
