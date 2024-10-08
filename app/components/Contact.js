@@ -19,7 +19,7 @@ const SocialIcon = ({ href, Icon, label }) => (
 
 const Contact = () => {
     return (
-        <div className="min-h-full lg:min-h-screen space-x-10 flex justify-center items-center py-12 sm:px-4 md:px-8">
+        <div className="min-h-full lg:min-h-screen space-x-10 flex justify-center items-center py-12 sm:px-4 md:px-8 mx-20">
             <div className='sm:px-4'>
                 <div className="text-left mb-12">
                     <h1 className="text-4xl md:text-7xl font-bold text-black">
