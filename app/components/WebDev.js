@@ -1,6 +1,14 @@
 'use client';
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function WebDev() {
+  useEffect(() => {
+    AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        once: true,     // Animation will happen only once
+    });
+}, []);
   return (
     <section className="  flex flex-col md:flex-row items-center justify-between  bg-[#0d3b66] w-full md:h-[700px]   rounded-3xl">
       {/* Left Side: Image */}
@@ -19,14 +27,15 @@ export default function WebDev() {
         
         {/* Main Image */}
         <img
-          src="/images/Zahrat.png" // Replace with your image path
+          src="/images/Zahrat.png" 
+          data-aos="fade-right"
           alt="Website Showcase"
           className=" pl-8 md:pl-0 w-4/4 md:w-full rounded-lg overflow-hidden "
         />
       </div>
 
       {/* Right Side: Text and Tags */}
-      <div className="md:w-2/4 text-white mt-8 md:mt-0 p-8">
+      <div className="md:w-2/4 text-white mt-8 md:mt-0 p-8" data-aos="zoom-in">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">Websites</h2>
         <div className="flex flex-wrap gap-4 mb-6">
           {/* Tags */}

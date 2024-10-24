@@ -1,11 +1,19 @@
 'use client';
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function ThreeDdesign() {
+  useEffect(() => {
+    AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        once: true,     // Animation will happen only once
+    });
+}, []);
   return (
     <section className="flex flex-col md:flex-row items-center justify-between w-full bg-[#0d3b66] md:h-[700px]  rounded-3xl">
      {/* Left side Text */}
     
-      <div className="md:w-2/4 text-white mt-12 md:mt-0 p-8 ">
+      <div className="md:w-2/4 text-white mt-12 md:mt-0 p-8  " data-aos="zoom-in">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">3D Visualising</h2>
         <div className="flex flex-wrap gap-4 mb-6">
           {/* Tags */}
@@ -45,7 +53,8 @@ export default function ThreeDdesign() {
               className=" top-0 absolute block md:hidden w-full h-auto"
             />
          <img
-         src="/images/herohome.png" // Replace with your image path
+         src="/images/herohome.png"  
+         data-aos="fade-left"// Replace with your image path
           alt="Website Showcase"
           className="w-4/4 md:w-full pl-0 md:pl-32 rounded-lg py-20 md:py-0"
         />

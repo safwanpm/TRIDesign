@@ -1,3 +1,7 @@
+'use client';
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Inter } from "@next/font/google";
 import Contact from "./components/Contact";
 import Crew from "./components/Crew";
@@ -10,7 +14,12 @@ import SwiperComp from "./components/swiper";
 
 const inter = Inter({ subsets: ['latin'] });
 export default function Home() {
-
+  useEffect(() => {
+    AOS.init({
+      duration: 2000, // Set the animation duration
+      // once: true, // Ensure animation happens only once
+    });
+  }, []);
 
   return (
     <div className={` overflow-hidden`}>

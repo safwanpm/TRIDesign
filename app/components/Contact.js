@@ -1,6 +1,9 @@
+'use client';
 import React from 'react';
 import { FaPhoneAlt, FaEnvelope, FaLinkedin, FaInstagram, FaWhatsapp } from 'react-icons/fa';
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const contactInfo = {
     phone: "+917561819183",
     email: "infotridesigning@gmail.com",
@@ -18,10 +21,16 @@ const SocialIcon = ({ href, Icon, label }) => (
 );
 
 const Contact = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, // Animation duration in milliseconds
+            once: true,     // Animation will happen only once
+        });
+    }, []);
     return (
         <div className="min-h-full lg:min-h-screen space-x-10 flex justify-center items-center py-12 sm:px-4 md:px-8 mx-20">
             <div className='sm:px-4'>
-                <div className="text-left mb-12">
+                <div className="text-left mb-12" data-aos="zoom-in">
                     <h1 className="text-4xl md:text-7xl font-bold text-black">
                         Got an Interesting Project?
                     </h1>
@@ -30,7 +39,7 @@ const Contact = () => {
                     </h2>
                 </div>
 
-                <div className="inline-flex items-center px-4 p-2 space-x-0 md:space-x-4 border rounded-full shadow-lg">
+                <div className="inline-flex items-center px-4 p-2 space-x-0 md:space-x-4 border rounded-full shadow-lg"data-aos="fade-up">
                     <a href={`tel:${contactInfo.phone}`}
                         className="flex items-center space-x-2 px-4 py-2 rounded-full text-gray-600 hover:text-black focus:outline-none">
                         <FaPhoneAlt />

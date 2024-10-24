@@ -1,9 +1,18 @@
+'use client';
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Website() {
+  useEffect(() => {
+    AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        once: true,     // Animation will happen only once
+    });
+}, []);
   return (
     <>
       <Navbar />
@@ -28,6 +37,7 @@ function Website() {
 
             {/* Main Image */}
             <img
+            data-aos="fade-right"
               src="/images/Zahrat.png" // Replace with your image path
               alt="Website Showcase"
               className=" md:w-full rounded-lg overflow-hidden "
@@ -35,7 +45,7 @@ function Website() {
           </div>
 
           {/* Right Side: Text and Tags */}
-          <div className="md:w-2/4  text-white mt-8 md:mt-0 p-8">
+          <div className="md:w-2/4  text-white mt-8 md:mt-0 p-8" data-aos = "zoom-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Zahrat <span className="text-yellow-400">Al Reef</span></h2>
 
             <p className="text-lg mb-6">
