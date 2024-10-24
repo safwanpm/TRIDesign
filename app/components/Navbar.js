@@ -4,7 +4,7 @@ export default function Navbar() {
         <nav className="fixed top-0 w-full  backdrop-blur-sm z-50 ">
             <div className="container mx-auto py-4 md:py-8">
                 <h1 className="  text-2xl md:text-3xl font-bold leading-tight text-center 
-        text-transparent bg-clip-text bg-primary-gradient">
+        text-transparent bg-clip-text bg-primary-gradient  font-family:Roboto Slab, serif">
                    <a href="/">TRI DESIGN</a> 
                 </h1> </div>
         </nav>

@@ -1,25 +1,23 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import {Inter} from "@next/font/google";
+import { Inter } from "next/font/google";  // Correct import from `next/font/google`
 
-const inter =Inter({
-  subsets:['latin']
-})
-
-const gilan = localFont({
-  src: "./fonts/Gilan-Medium.ttf",  // Corrected the file name and extension
-  variable: "--font-gilan",
-  weight: "400",  // Specify the weight of the font (medium = 400 or 500 typically)
+// Import Inter from Google Fonts
+const inter = Inter({
+  subsets: ['latin'],
 });
+
+// Import custom local fonts
+
+
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+  src: "./fonts/GeistVF.woff",  // Ensure `.woff` file is in the correct folder
+  variable: "--font-geist-sans",  // CSS variable for Geist Sans font
 });
+
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+  src: "./fonts/GeistMonoVF.woff",  // Ensure `.woff` file is in the correct folder
+  variable: "--font-geist-mono",  // CSS variable for Geist Mono font
 });
 
 export const metadata = {
@@ -29,7 +27,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${gilan.variable} ${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" className={`$ ${geistSans.variable} ${geistMono.variable}`}>
       <body>
         {children}
       </body>
