@@ -8,7 +8,7 @@ function Website() {
     <>
       <Navbar />
       <div className='px-8 md:px-20 mt-24'>
-        <h2 className=" text-center text-5xl font-bold text-transparent bg-clip-text bg-primary-gradient">
+        <h2 className=" pb-10 text-center text-5xl font-bold text-transparent bg-clip-text bg-primary-gradient">
           Recent Works
         </h2>
         <section className="  flex flex-col md:flex-row items-center justify-between  bg-[#3b5d50] w-full md:h-[700px]   rounded-3xl">

@@ -19,9 +19,9 @@ export default function WebDev() {
         
         {/* Main Image */}
         <img
-          src="/images/laptop.png" // Replace with your image path
+          src="/images/Zahrat.png" // Replace with your image path
           alt="Website Showcase"
-          className="w-3/4 md:w-full rounded-lg overflow-hidden "
+          className=" pl-8 md:pl-0 w-4/4 md:w-full rounded-lg overflow-hidden "
         />
       </div>
 

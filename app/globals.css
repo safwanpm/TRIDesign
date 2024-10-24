@@ -31,7 +31,6 @@ body {
 
   color: var(--foreground);
 
-  font-family: var(--font-gilan), serif;
 }
 
 @layer utilities {

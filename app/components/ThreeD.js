@@ -39,10 +39,15 @@ export default function ThreeDdesign() {
           alt="Top Banner"
           className="hidden md:block absolute  left-0 md:h-[700px]  "
         />
+          <img
+              src="/images/B top.png" // Replace with your mobile image path
+              alt="Mobile Top Banner"
+              className=" top-0 absolute block md:hidden w-full h-auto"
+            />
          <img
-         src="/images/laptop-min.png" // Replace with your image path
+         src="/images/herohome.png" // Replace with your image path
           alt="Website Showcase"
-          className="w-3/4 md:w-full pl-32 rounded-lg"
+          className="w-4/4 md:w-full pl-0 md:pl-32 rounded-lg py-20 md:py-0"
         />
       </div>
     
