@@ -5,18 +5,18 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {
+ theme: {
     extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        // primary: "#fff2cf", 
+        primary: "#512361", 
+        // secondary: "#8b2711", 
+        teritory: "#41b3d3", 
         
-      },
-      backgroundImage: {
-        'primary-gradient': 'linear-gradient(to right, #9F7AEA, #31346E, #31346E)', // your gradient colors
-        'secondary-gradient': 'linear-gradient(to right, #9F7AEA, #ED64A6, #F6AD55)', // your gradient colors
-        'zahrat-gradient': 'linear-gradient(to right, #3b5d50,#3b5d50, #31346E)', // your gradient colors
-        // 'primary-gradient': 'linear-gradient(to right, #faf0ca, #faf0ca,#0d3b66,#0d3b66)', // your gradient colors
+        secondary: "#fffff", // Add your primary color here
+      
       },
     },
   },

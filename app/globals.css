@@ -5,6 +5,12 @@
 :root {
   --background: url('/images/bg-1.jpg'); /* Optional: Use a different image for dark mode */
 
+ 
+}
+
+h1 {
+  font-family: var(--font-dominik);
+
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -18,23 +24,36 @@
 }
 
 body {
+  
   color: var(--foreground);
   background-image: var(--background);
   background-size: cover; /* Ensures the background image covers the entire viewport */
   background-position: center; /* Centers the background image */
   background-repeat: no-repeat; /* Prevents the background from repeating */
   background-attachment: fixed; /* Keeps the background fixed when scrolling */
-  font-family: Arial, Helvetica, sans-serif;
-  /* font-family: 'Roboto Slab', serif; */
-  
+  font-family: var(--font-geist-sans), var(--font-caviardreams) ,var(--font-dominik), Arial, Helvetica, sans-serif;
+
 
 
   color: var(--foreground);
 
 }
 
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Edge */
+}
+.font-caviar {
+  font-family: var(--font-caviardreams);
+}
+.font-dominik {
+  font-family: var(--font-dominik);
+}
+

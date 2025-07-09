@@ -21,17 +21,12 @@ const SocialIcon = ({ href, Icon, label }) => (
 );
 
 const Contact = () => {
-    useEffect(() => {
-        AOS.init({
-            duration: 1000, // Animation duration in milliseconds
-            once: true,     // Animation will happen only once
-        });
-    }, []);
+    
     return (
         <div className="min-h-full lg:min-h-screen space-x-10 flex justify-center items-center py-12 sm:px-4 md:px-8 mx-20">
-            <div className='sm:px-4'>
+            <div className='sm:px-4 bg-'>
                 <div className="text-left mb-12" data-aos="zoom-in">
-                    <h1 className="text-4xl md:text-7xl font-bold text-black">
+                    <h1 className="text-4xl md:text-7xl font-dominik font-bold text-black">
                         Got an Interesting Project?
                     </h1>
                     <h2 className="text-4xl md:text-7xl font-bold text-transparent bg-clip-text bg-primary-gradient mt-2">

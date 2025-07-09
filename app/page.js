@@ -4,45 +4,47 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Inter } from "@next/font/google";
 import Contact from "./components/Contact";
-import Crew from "./components/Crew";
+import Lenis from "@studio-freight/lenis";
 import Footer from "./components/Footer";
-import HeroSection from "./components/Herosection";
+import HeroSection from "./components/FeaturedProjects";
 import Navbar from "./components/Navbar";
 import ThreeDdesign from "./components/ThreeD";
 import WebDev from "./components/WebDev";
 import SwiperComp from "./components/swiper";
+import { Hero } from "./components/Hero";
+import Loader from "./components/Loader";
+import FeaturedProjects from "./components/FeaturedProjects";
 
 const inter = Inter({ subsets: ['latin'] });
 export default function Home() {
   useEffect(() => {
-    AOS.init({
-      duration: 2000, // Set the animation duration
-      // once: true, // Ensure animation happens only once
-    });
+    if (typeof window !== "undefined") {
+      const lenis = new Lenis({
+
+        lerp: 0.05,
+        infinite: false,
+      });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    }
   }, []);
 
   return (
     <div className={` overflow-hidden`}>
+      <Loader /> {/* ⬅️ Loading screen here */}
       <Navbar />
-      <div> 
-        <HeroSection />
-      </div>
-      {/* <div>
-        <SwiperComp />
-      </div> */}
-      <div className="p-4 md:p-16">
-        <WebDev />
-      </div>
-      <div className="p-4 md:p-16">
-        <ThreeDdesign />
-      </div>
-      {/* <div className="px-6 md:px-16">
-        <Crew />
-      </div> */}
-      <div className="px-16">
-        <Contact />
-      </div>
-     
+
+
+      <Hero />
+      <FeaturedProjects />
+      <Contact />
+
+
       <Footer />
     </div>
   );
