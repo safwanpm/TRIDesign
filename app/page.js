@@ -14,6 +14,8 @@ import SwiperComp from "./components/swiper";
 import { Hero } from "./components/Hero";
 import Loader from "./components/Loader";
 import FeaturedProjects from "./components/FeaturedProjects";
+import Service from "./components/ServiceHome";
+import ServiceHome from "./components/ServiceHome";
 
 const inter = Inter({ subsets: ['latin'] });
 export default function Home() {
@@ -42,7 +44,8 @@ export default function Home() {
 
       <Hero />
       <FeaturedProjects />
-      <Contact />
+      <ServiceHome/>
+      {/* <Contact /> */}
 
 
       <Footer />

@@ -99,10 +99,12 @@ export const Hero = () => {
 
         
 
-        <motion.footer
+        <motion.div
+        whileHover={{ scale: 1.1 }}
+  transition={{ type: "spring", stiffness: 400, damping: 10 }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+         
           className="mt-4 gap-4"
         >
           <Link
@@ -111,7 +113,7 @@ export const Hero = () => {
           >
             Contact Us
           </Link>
-        </motion.footer>
+        </motion.div>
       </motion.div>
 
       {/* 🔹 Scroll Down Arrow */}

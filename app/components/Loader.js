@@ -8,7 +8,7 @@ export default function Loader() {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setIsVisible(false), 2000); // 5 seconds
+    const timeout = setTimeout(() => setIsVisible(false), 2000); // 2 seconds
     return () => clearTimeout(timeout);
   }, []);
 
@@ -16,7 +16,7 @@ export default function Loader() {
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          className="fixed inset-0 bg-primary flex flex-col items-center justify-center z-[9999]"
+          className="fixed inset-0 bg-white flex flex-col items-center justify-center z-[9999]"
           initial={{ opacity: 1 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -28,7 +28,7 @@ export default function Loader() {
             transition={{ duration: 2 }}
           >
             <Image
-              src="/images/vaxa-main.png"
+              src="/images/vexa-main-1.png"
               alt="Logo"
               width={400}
               height={400}
