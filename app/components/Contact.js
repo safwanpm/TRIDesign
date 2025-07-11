@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Mail, ArrowUpRight } from 'lucide-react';
@@ -23,14 +24,15 @@ const Contact = () => {
             className="text-6xl md:text-7xl lg:text-8xl font-bold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent relative"
           >
             Let's Connect.
-            <motion.div
+            <motion.a
+            href='/contact'
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.8, ease: "easeOut" }}
               className="absolute -top-4 -right-12 md:-right-16 lg:-right-20"
             >
               <ArrowUpRight className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 text-pink-500" />
-            </motion.div>
+            </motion.a>
           </motion.h2>
         </motion.div>
 

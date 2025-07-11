@@ -70,9 +70,9 @@ const Navbar = () => {
           transition={{ duration: 1.7 }}
           className="font-dominik flex flex-col space-y-6 text-secondary text-4xl py-4 px-8"
         >
-          {['Home', 'About', 'Works', 'Contact','Services'].map((item, index) => (
+          {['Home', 'About', 'Works', 'Contact', 'Services'].map((item, index) => (
             <li key={index}>
-              <Link href={`/${item === 'Home' ? '' : item.toLowerCase()}`}>
+              <Link href={`/${item === 'Home' ? '/' : item.toLowerCase()}`}>
                 {item}
               </Link>
             </li>
@@ -103,23 +103,26 @@ const Navbar = () => {
         >
           <Link href="https://www.instagram.com" target="_blank">
             <svg
-              className="w-6 h-6 text-secondary hover:text-white transition-transform hover:scale-110"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-8 h-8  text-secondary hover:text-black transform hover:rotate-12 transition-transform duration-300"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
-              <path d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5Zm0 1.5h8.5A4.25 4.25 0 0 1 20.5 7.75v8.5A4.25 4.25 0 0 1 16.25 20.5h-8.5A4.25 4.25 0 0 1 3.5 16.25v-8.5A4.25 4.25 0 0 1 7.75 3.5ZM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 1.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7Zm5.25-.25a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5Z" />
+              <path d="M7.75 2C5.13 2 3 4.13 3 6.75v10.5C3 19.87 5.13 22 7.75 22h8.5C18.87 22 21 19.87 21 17.25V6.75C21 4.13 18.87 2 16.25 2h-8.5zM5 6.75C5 5.78 5.78 5 6.75 5h10.5c.97 0 1.75.78 1.75 1.75v10.5c0 .97-.78 1.75-1.75 1.75H6.75C5.78 19 5 18.22 5 17.25V6.75zM12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 1.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zm4.75-.88a.88.88 0 1 0 0 1.75.88.88 0 0 0 0-1.75z" />
             </svg>
+
           </Link>
           <Link href="https://www.linkedin.com/in/muhammed-safwan-pm" target="_blank">
             <svg
-              className="w-6 h-6 text-secondary hover:text-white transition-transform hover:scale-110"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-8 h-8 text-secondary hover:text-black transform hover:rotate-12 transition-transform duration-300"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
-              <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 24h4V8h-4v16zm7.5 0h4v-8c0-1.3.7-2 2-2s2 .7 2 2v8h4v-8c0-3.3-1.7-5-5-5s-4.5 1.7-5 3.2V8h-4v16z" />
+              <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.5c-1.03 0-1.5-.84-1.5-1.5 0-.66.47-1.5 1.5-1.5s1.5.84 1.5 1.5c0 .66-.47 1.5-1.5 1.5zm13.5 12.5h-3v-5.5c0-3.67-4-3.38-4 0v5.5h-3v-11h3v1.5c1.4-2.58 7-2.78 7 2.47v7.03z" />
             </svg>
           </Link>
-          
+
         </motion.div>
       </motion.div>
 

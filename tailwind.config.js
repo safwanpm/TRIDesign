@@ -13,7 +13,7 @@ module.exports = {
         // primary: "#fff2cf", 
         primary: "#512361", 
         // secondary: "#8b2711", 
-        teritory: "#41b3d3", 
+        teritory: "#774181", 
         
         secondary: "#fffff", // Add your primary color here
       

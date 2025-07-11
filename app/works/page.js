@@ -1,19 +1,18 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import AboutHeader from '../components/about/AboutHeader'
+import WorksHeader from '../components/works/WorksHeader'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
+import Navbar from '../components/Navbar'
 
-
-function AboutPage() {
+function WorksPage() {
   return (
     <div>
         <Navbar/>
-        <AboutHeader/>
+        <WorksHeader/>
         <Contact/>
         <Footer/>
     </div>
   )
 }
 
-export default AboutPage
+export default WorksPage

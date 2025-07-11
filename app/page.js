@@ -16,6 +16,7 @@ import Loader from "./components/Loader";
 import FeaturedProjects from "./components/FeaturedProjects";
 import Service from "./components/ServiceHome";
 import ServiceHome from "./components/ServiceHome";
+import AboutHome from "./components/AboutHome";
 
 const inter = Inter({ subsets: ['latin'] });
 export default function Home() {
@@ -44,6 +45,7 @@ export default function Home() {
 
       <Hero />
       <FeaturedProjects />
+      <AboutHome/>
       <ServiceHome/>
       <Contact />
 
