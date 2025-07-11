@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const ServiceHeader = () => {
+const ContactHeader = () => {
   return (
     <section className="bg-secondary min-h-[60vh] w-full mt-36">
       <div className="  mx-20 px-6 py-8">
@@ -30,7 +30,7 @@ const ServiceHeader = () => {
         >
           <Link href="/" className="hover:underline">Home</Link>
           <span>/</span>
-          <span className="text-black">Services</span>
+          <span className="text-black">Contact Us</span>
         </motion.div>
 
         {/* Heading */}
@@ -40,11 +40,11 @@ const ServiceHeader = () => {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="text-[80px] md:text-[120px] leading-tight text-black font-semibold"
         >
-          Our Services
+          Contact Us
         </motion.h1>
       </div>
     </section>
   );
 };
 
-export default ServiceHeader;
+export default ContactHeader;

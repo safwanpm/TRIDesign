@@ -8,13 +8,13 @@ const services = [
     title: 'Bedroom Design',
     description:
       'We create serene and sophisticated bedrooms tailored to your lifestyle and spatial needs. Whether you seek a modern minimalist vibe or a luxurious retreat, our team ensures your bedroom feels restful and personalized.',
-    image: '/images/bedroom.jpg',
+    image: '/images/fhome1.jpg',
   },
   {
     title: 'Living Room Concepts',
     description:
       'Our living room designs balance comfort, elegance, and personality. From cozy spaces perfect for family time to sophisticated lounges for entertaining, we deliver warmth, flow, and function in every corner.',
-    image: '/images/living.jpg',
+    image: '/images/fhome3.jpg',
   },
   // ...other services not shown for this preview
 ];

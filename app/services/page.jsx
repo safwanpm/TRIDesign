@@ -1,8 +1,9 @@
 import React from "react";
 import ServiceHeader from "../components/ServiceHeader";
-import Service from "../components/ServiceHome";
+
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import Service from "../components/Service";
 
 function ServicePage() {
   return (

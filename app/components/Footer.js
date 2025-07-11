@@ -98,7 +98,7 @@ export default function Footer() {
 
         {/* Bottom border */}
         <div className="border-t border-[#bfb8aa] pt-6 text-xs text-[#bfb8aa] text-center">
-          © {new Date().getFullYear()} Archipelago. All rights reserved.
+          © {new Date().getFullYear()} Vexa-Architect. All rights reserved.
         </div>
       </div>
     </footer>

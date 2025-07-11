@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import AboutHeader from '../components/AboutHeader'
+import AboutHeader from '../components/about/AboutHeader'
 
 function AboutPage() {
   return (

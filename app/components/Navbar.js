@@ -70,7 +70,7 @@ const Navbar = () => {
           transition={{ duration: 1.7 }}
           className="font-dominik flex flex-col space-y-6 text-secondary text-4xl py-4 px-8"
         >
-          {['Home', 'About', 'Works', 'Contact'].map((item, index) => (
+          {['Home', 'About', 'Works', 'Contact','Services'].map((item, index) => (
             <li key={index}>
               <Link href={`/${item === 'Home' ? '' : item.toLowerCase()}`}>
                 {item}

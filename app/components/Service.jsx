@@ -6,48 +6,36 @@ const services = [
   {
     title: 'Bedroom Design',
     description: 'We create serene and sophisticated bedrooms tailored to your lifestyle and spatial needs.',
-    image: '/images/bedroom.jpg',
+    image: '/images/fhome1.jpg',
   },
   {
     title: 'Living Room Concepts',
     description: 'Our living room designs balance comfort, elegance, and personality, offering a space to unwind or entertain.',
-    image: '/images/living.jpg',
+    image: '/images/fhome1.jpg',
   },
   {
     title: 'Kitchen Interiors',
     description: 'We design modern, functional kitchens that blend aesthetic appeal with smart utility.',
-    image: '/images/kitchen.jpg',
+    image: '/images/fhome3.jpg',
   },
   {
     title: 'Bathroom Aesthetics',
     description: 'From compact bathrooms to spa-inspired spaces, we craft designs with luxury and practicality in mind.',
-    image: '/images/bathroom.jpg',
+    image: '/images/fhome2.jpg',
   },
   {
     title: 'Exterior Styling',
     description: 'We enhance curb appeal and structure harmony through stunning exterior visualizations.',
-    image: '/images/exterior.jpg',
+    image: '/images/fhome1.jpg',
   },
-  {
-    title: 'Modular Solutions',
-    description: 'Custom-built modular designs that maximize efficiency without compromising style.',
-    image: '/images/modular.jpg',
-  },
+ 
 ];
 
 export default function Service() {
   return (
     <section className=" text-black py-20 px-4 md:px-16 space-y-24">
       {/* Heading */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-        viewport={{ once: true }}
-        className="border-t border-b border-gray-400 py-6 mb-12"
-      >
-        <h2 className="text-5xl md:text-6xl font-light">Our Services</h2>
-      </motion.div>
+      
 
       {/* Intro Description */}
       <motion.p
