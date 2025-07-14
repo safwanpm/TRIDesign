@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+import CircularText from './animatedcomponents/Circulartext';
 
 const projects = [
   {
@@ -17,7 +18,7 @@ const projects = [
 export default function FeaturedProjects() {
   return (
     <section className="bg-secondary text-black py-20 px-4 md:px-16">
-      <div className="">
+      <div>
         {/* Section Heading */}
         <motion.h2
           initial={{ y: 50, opacity: 0 }}
@@ -43,7 +44,7 @@ export default function FeaturedProjects() {
         </motion.p>
 
         {/* Project Grid */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="relative mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, i) => (
             <motion.div
               key={i}
@@ -62,9 +63,30 @@ export default function FeaturedProjects() {
               />
 
               {/* Project Title */}
-              <div className="absolute bottom-4 left-4  text-black px-3 py-1 text-sm font-medium rounded">
+              <div className="absolute bottom-4 left-4 text-black px-3 py-1 text-sm font-medium rounded">
                 {project.title}
               </div>
+
+               <div className='absolute bottom-4 right-4  px-3 py-1 text-sm font-light rounded'>
+                  {i === projects.length - 1 && (
+                    <CircularText
+                      text="*VIEW*OTHER*PROJECTS"
+                      onHover="speedUp"
+                      spinDuration={20}
+                      className="absolute bottom-0 right-0 z-10"
+                    />
+                  )}
+                </div>
+
+              {/* CircularText only on last project image */}
+              {/* {i === projects.length - 1 && (
+                <CircularText
+                  text="VIEW*OTHER*PROJECTS"
+                  onHover="speedUp"
+                  spinDuration={20}
+                  className="absolute bottom-0 right-0 z-10"
+                />
+              )} */}
             </motion.div>
           ))}
         </div>
@@ -79,18 +101,9 @@ export default function FeaturedProjects() {
         >
           <Link
             href="/projects"
-            className="inline-flex items-center text-base font-medium group border-b border-black pb-1"
+            className="inline-flex items-center text-base font-medium group pb-1"
           >
-            <span className="mr-2">View All Projects</span>
-            <motion.svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-            </motion.svg>
+            {/* View All Projects text or icon can go here */}
           </Link>
         </motion.div>
       </div>
