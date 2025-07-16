@@ -54,7 +54,7 @@ export default function ServiceHome() {
             key={i}
             className={`flex flex-col md:flex-row ${
               !isEven ? 'md:flex-row-reverse' : ''
-            } items-center gap-10`}
+            }  gap-10`}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.1, duration: 0.6 }}

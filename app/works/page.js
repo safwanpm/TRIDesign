@@ -3,23 +3,38 @@ import WorksHeader from '../components/works/WorksHeader'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import WorkShowcase from '../components/works/WorkShowcase'
+import Masonry from '../components/works/WorkShowcase'
 
 function WorksPage() {
+  const items = [
+    { id: '1', img: '/images/6.jpg', url: '#', height: 500 },
+    { id: '2', img: '/images/7.jpg', url: '#', height: 450 },
+    { id: '3', img: 'https://picsum.photos/id/1020/600/800?grayscale', url: '#', height: 600 },
+    { id: '4', img: '/images/11.png', url: '#', height: 500 },
+    { id: '5', img: '/images/13.png', url: '#', height: 300 },
+    { id: '6', img: '/images/R6.png', url: '#', height: 600 },
+    { id: '7', img: '/images/R7.png', url: '#', height: 400 },
+    { id: '8', img: '/images/R8.png', url: '#', height: 350 },
+    // { id: '9', img: 'https://picsum.photos/id/1021/600/600?grayscale', url: '#', height: 500 },
+  ]
+
   return (
     <div>
-        <Navbar/>
-        <WorksHeader/>
-        <WorkShowcase
-  items={[
-    { id: '1', img: '/img1.jpg', url: '/images/6.jpg', height: 400 },
-    { id: '2', img: '/img2.jpg', url: '/images/7.jpg', height: 300 },
-    // ...
-  ]}
-/>
-
-        <Contact/>
-        <Footer/>
+      <Navbar />
+      <WorksHeader />
+      <Masonry
+        items={items}
+        ease="power3.out"
+        duration={0.6}
+        stagger={0.05}
+        animateFrom="bottom"
+        scaleOnHover={true}
+        hoverScale={0.95}
+        blurToFocus={true}
+        colorShiftOnHover={false}
+      />
+      <Contact />
+      <Footer />
     </div>
   )
 }
