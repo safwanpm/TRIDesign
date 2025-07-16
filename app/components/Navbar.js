@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div className="relative overflow-x-hidden">
-      <nav className=" font-dominik text-secondary fixed top-0 left-0 z-50 flex justify-between items-center py-4 md:py-8 px-4 md:px-16 w-full  text-white  dark:bg">
+      <nav className=" font-dominik text-secondary fixed top-0 left-0 z-50 flex justify-between items-center py-4 md:py-8  md:px-16 w-full  text-white  dark:bg">
         {/* Image Logo */}
 
         <motion.a

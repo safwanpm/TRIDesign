@@ -4,18 +4,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const services = [
-  {
-    title: 'Bedroom Design',
-    description:
-      'We create serene and sophisticated bedrooms tailored to your lifestyle and spatial needs. Whether you seek a modern minimalist vibe or a luxurious retreat, our team ensures your bedroom feels restful and personalized.',
-    image: '/images/fhome1.jpg',
-  },
-  {
-    title: 'Living Room Concepts',
-    description:
-      'Our living room designs balance comfort, elegance, and personality. From cozy spaces perfect for family time to sophisticated lounges for entertaining, we deliver warmth, flow, and function in every corner.',
-    image: '/images/fhome3.jpg',
-  },
+{
+  title: 'Interior Design & 3D Visualization',
+  description:
+    'From kitchens to bedrooms, we design beautiful, functional interiors tailored to your lifestyle—brought to life with immersive 3D visuals.',
+  image: '/images/A10.jpg',
+},
+{
+  title: 'Exterior Design & Visualization',
+  description:
+    'We shape striking exteriors and outdoor spaces with precision. Every design is presented in detailed 3D, giving you a complete view before execution.',
+  image: '/images/n12.png',
+}
+
+
   // ...other services not shown for this preview
 ];
 

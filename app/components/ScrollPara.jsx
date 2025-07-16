@@ -2,7 +2,7 @@ import React from 'react'
 
 function ScrollPara() {
   return (
-    <div>ScrollPara</div>
+    <div></div>
   )
 }
 

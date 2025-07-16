@@ -52,7 +52,7 @@ export default function Home() {
 
 
       <Hero />
-      <ScrollPara />
+      {/* <ScrollPara /> */}
       <FeaturedProjects />
       <AboutHome />
       <ServiceHome />

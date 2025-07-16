@@ -7,11 +7,11 @@ import CircularText from './animatedcomponents/Circulartext';
 const projects = [
   {
     title: 'Urban Masterplan',
-    image: '/images/room1.jpg',
+    image: '/images/11.png',
   },
   {
     title: 'City Skyline',
-    image: '/images/room3.jpg',
+    image: '/images/T21.jpg',
   },
 ];
 
@@ -48,7 +48,7 @@ export default function FeaturedProjects() {
           {projects.map((project, i) => (
             <motion.div
               key={i}
-              className="relative overflow-hidden group rounded-lg shadow-md"
+              className="relative overflow-hidden group  shadow-md"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 * i, duration: 0.6 }}
@@ -67,7 +67,9 @@ export default function FeaturedProjects() {
                 {project.title}
               </div>
 
-               <div className='absolute bottom-4 right-4  px-3 py-1 text-sm font-light rounded'>
+               <a
+               href='/works'
+                className=' hidden md:block absolute bottom-4 right-4  px-3 py-1 text-sm font-light rounded'>
                   {i === projects.length - 1 && (
                     <CircularText
                       text="*VIEW*OTHER*PROJECTS"
@@ -76,7 +78,7 @@ export default function FeaturedProjects() {
                       className="absolute bottom-0 right-0 z-10"
                     />
                   )}
-                </div>
+                </a>
 
               {/* CircularText only on last project image */}
               {/* {i === projects.length - 1 && (

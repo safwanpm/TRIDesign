@@ -1,7 +1,7 @@
 // components/StatCard.js (or wherever your StatCard component is)
 'use client'
 import React, { useState, useEffect, useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
+import { delay, motion, useInView } from 'framer-motion';
 
 const StatCard = ({ number, suffix, title, illustration, delay = 0 }) => {
   const [count, setCount] = useState(0);
@@ -166,35 +166,39 @@ const MasterPlanIllustration = () => (
 // import StatCard, { WorkshopIllustration, GamesIllustration, DwellingsIllustration, MasterPlanIllustration } from './StatCard'; // Adjust path if needed
 
 const AboutHome = () => {
+  
   const stats = [
     {
-      number: "100",
-      suffix: "+",
-      title: "Workshops this year",
-      illustration: <WorkshopIllustration />,
-      delay: 0
-    },
-    {
-      number: "12",
-      suffix: "",
-      title: "Games Precincts, Venues + Overlay Plans",
-      illustration: <GamesIllustration />,
-      delay: 0.2
-    },
-    {
-      number: "1,250",
-      suffix: "+",
-      title: "Dwellings currently on our boards",
-      illustration: <DwellingsIllustration />,
-      delay: 0.4
-    },
-    {
-      number: "100",
-      suffix: "+",
-      title: "City Shaping Master Planning",
-      illustration: <MasterPlanIllustration />,
-      delay: 0.6
-    }
+  number: "150",
+  suffix: "+",
+  title: "Clients Served",
+  illustration:<DwellingsIllustration/>,
+  delay:0
+},
+{
+  number: "200",
+  suffix: "+",
+  title: "Projects Completed",
+  illustration:<MasterPlanIllustration/>,
+  delay:0.2
+
+},
+{
+  number: "85",
+  suffix: "+",
+  title: "Verified Reviews",
+  illustration:<WorkshopIllustration/>,
+  delay:0.4,
+},
+{
+  number: "500",
+  suffix: "+",
+  title: "3D Visuals Created",
+  illustration:<GamesIllustration/>,
+  delay:0.6
+},
+
+    
   ];
 
   return (
