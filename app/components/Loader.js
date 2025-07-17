@@ -28,7 +28,7 @@ export default function Loader() {
             transition={{ duration: 2 }}
           >
             <Image
-              src="/images/vexa-main-1.png"
+              src="/images/vexa-loading.png"
               alt="Logo"
               width={400}
               height={400}
