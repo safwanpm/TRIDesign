@@ -5,14 +5,17 @@ import { motion } from 'framer-motion';
 
 const crewMembers = [
   '/images/crew1.jpg',
-  '/images/crew1.jpg',
-  '/images/crew1.jpg',
-  '/images/crew1.jpg',
-  '/images/crew1.jpg',
-  '/images/crew1.jpg',
-  '/images/crew1.jpg',
+  '/images/rahil.png',
   
   '/images/crew1.jpg',
+  '/images/rahil.png',
+  
+  '/images/crew1.jpg',
+  '/images/rahil.png',
+  
+  '/images/crew1.jpg',
+  '/images/rahil.png',
+  
   
  
 ];

@@ -18,6 +18,7 @@ import Service from "./components/ServiceHome";
 import ServiceHome from "./components/ServiceHome";
 import AboutHome from "./components/AboutHome";
 import ScrollPara from "./components/ScrollPara";
+import OurStory from "./components/OurStory";
 
 
 export default function Home() {
@@ -52,6 +53,7 @@ export default function Home() {
 
 
       <Hero />
+      <OurStory/>
       {/* <ScrollPara /> */}
       <FeaturedProjects />
       <AboutHome />
