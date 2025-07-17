@@ -1,8 +1,9 @@
-"use client";
+'use client';
 
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 export const Hero = () => {
   const targetRef = useRef(null);
@@ -56,34 +57,35 @@ export const Hero = () => {
   );
 
   return (
-    <section
-      ref={targetRef}
-      className="relative h-screen w-full z-10 overflow-hidden"
-    >
-      {/* 🔹 Background Video */}
-      <video
-        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
-        src="https://minaleandmann.com/wp-content/uploads/2018/05/slide_10.mp4"
-        autoPlay
-        muted
-        loop
-        playsInline
-      />
+    <section ref={targetRef} className="relative h-screen w-full overflow-hidden">
+      {/* 🔹 Fullscreen PNG Background with Zoom-In Animation */}
+      <motion.div
+        className="absolute inset-0 -z-10"
+        animate={{ scale: [1, 1.1] }}
+        transition={{ duration: 10, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
+      >
+        <Image
+          src="/images/n10.png" // ✅ Your PNG path
+          alt="Phone Background"
+          fill
+          className="object-cover"
+          priority
+        />
+      </motion.div>
 
       {/* 🔹 Foreground Content */}
       <motion.div
         style={{ filter: `blur(${blur}px)` }}
         className="text-white ms-8 md:ms-20 w-full h-full flex flex-col mt-48 justify-center items-start"
       >
-        <h1 className="font-dominik text-left leading-tight">
+        <h1 className="font-dominik  text-left leading-tight">
           <motion.div
             initial={{ opacity: 0, y: 80 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="flex"
+            className="flex "
           >
-            <FlipText text="Vexa-Architect" />
-            
+            <FlipText text="Vexa-Architect"  className='shadow-2xl' />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 80 }}
@@ -91,33 +93,27 @@ export const Hero = () => {
             transition={{ duration: 0.7 }}
             className="flex"
           >
-           <FlipText text="Think." />
-            <FlipText text="Draw." />
-            <FlipText text="Build." />
+            <FlipText text="Think." className='shadow-2xl' />
+            <FlipText text="Draw." className='shadow-2xl' />
+            <FlipText text="Build." className='shadow-2xl' />
           </motion.div>
         </h1>
 
-        
-
         <motion.div
-        whileHover={{ scale: 1.1 }}
-  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-         
           className="mt-4 gap-4"
         >
           <Link
             href="/contact"
-            className="font-dominik border-secondary border-2 text-white px-6 py-4  text-sm hover:bg-secondary hover:text-white"
+            className="font-dominik border-secondary border-2 text-white px-6 py-4 text-sm hover:bg-secondary hover:text-white"
           >
             Contact Us
           </Link>
         </motion.div>
       </motion.div>
-
-      {/* 🔹 Scroll Down Arrow */}
-    
     </section>
   );
 };
