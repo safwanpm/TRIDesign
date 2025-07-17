@@ -8,13 +8,15 @@ const crewMembers = [
   '/images/rahil.png',
   
   '/images/safwan.png',
-  '/images/rahil.png',
+  '/images/fayas.png',
   
   '/images/crew1.jpg',
   '/images/rahil.png',
   
-  '/images/crew1.jpg',
-  '/images/rahil.png',
+  '/images/safwan.png',
+  '/images/fayas.png',
+  
+  
   
   
  
