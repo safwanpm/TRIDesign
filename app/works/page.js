@@ -3,7 +3,7 @@ import WorksHeader from '../components/works/WorksHeader'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import Masonry from '../components/works/WorkShowcase'
+// import Masonry from '../components/works/WorkShowcase'
 
 function WorksPage() {
   const items = [
@@ -22,7 +22,7 @@ function WorksPage() {
     <div>
       <Navbar />
       <WorksHeader />
-      <Masonry
+      {/* <Masonry
         items={items}
         ease="power3.out"
         duration={0.6}
@@ -32,7 +32,7 @@ function WorksPage() {
         hoverScale={0.95}
         blurToFocus={true}
         colorShiftOnHover={false}
-      />
+      /> */}
       <Contact />
       <Footer />
     </div>
